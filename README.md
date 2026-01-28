@@ -28,7 +28,8 @@ Optional:
 
 ## Usage Instructions
 
-Once the application is open in your browser, you can log in on the "Sign In" page or input a text on the "Home" page. If you are signed in, your past requests will be saved in the database and can be retrieved quickly. Once you have copied or written the text into the input box, you can click the "Submit" button. This will process the text, which might take a couple of dozens of seconds.
+Once the application is open in your browser, you can log in on the "Sign In" page or input a text on the "Home" page. If you are signed in, your past requests will be saved in the database and can be retrieved quickly. 
+After copying or writing text into the input box, you can click the "Submit" button. This will process the text, which might take a few dozens of seconds.
 
 A new box will then appear with the processed text. Upon hovering over individual words, additional information such as Part-of-Speech tags and grammatical function will be displayed.
 
