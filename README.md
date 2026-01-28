@@ -26,6 +26,11 @@ Optional:
    ollama pull llama3
 
 
+## Demo
+
+![Login Demo](./screenshots/Login.gif)
+
+
 ## Usage Instructions
 
 Once the application is open in your browser, you can log in on the "Sign In" page or input a text on the "Home" page. If you are signed in, your past requests will be saved in the database and can be retrieved quickly. 
