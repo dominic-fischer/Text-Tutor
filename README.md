@@ -2,16 +2,29 @@
 
 This application provides a simple and intuitive user interface that helps understand a text by providing additional cues. Word-level cues like Part-of-Speech (ADJ, NOUN, VERB, etc.) or grammatical function (subj, obj, indirect obj, etc.) are invoked by default, while additional functionalities like translation (using GoogleTranslate) and rephrasing (using OLLaMa's mistral model) can be leveraged on demand.
 
-## Installation Instructions
+## Overview
+This is a **local-first application** designed to run on the user's machine.
+It uses:
+- Flask (backend)
+- React (frontend)
+- SQLite (local DB)
+- Ollama (local LLM)
 
-- Step 0: Create a folder on your machine. Navigate into that folder using the command prompt, then clone this repository by running "git clone https://github.com/Fisherman-s-Friend/text-tutor.git"
-- Step 1: Download and install OLLaMa (https://ollama.com/download). You can install it by opening the downloaded installer and following the instructions there.
-  - Step 1a: Open the command prompt and type "ollama run mistral" to pull the mistral model to your machine and run it or "ollama pull mistral" to just pull it. Both options work.
-- Step 2: Download and install PostgreSQL (https://www.postgresql.org/download/). You can install it by opening the downloaded installer and following the instructions there.
-  - Step 2a: You are prompted to set a master password. Remember that password.
-  - Step 2b: Create an empty database and keep the name in mind.
-- Step 3: Open the cloned repository by double-clicking on it, then open the folder "flask-server". Once in there, open the file "server.py" and write the database master password and the database name into it (rows 15 & 16).
-- Step 4: Go back to the command prompt and navigate to the directory with the cloned repository. Start the application by running "python main.py" on Windows or "python3 main.py" on MacOS. This will automatically install all the dependencies, establish a connection to both the database and OLLaMa and open up the application in your browser.
+No cloud services required.
+
+## Quick Start (Local)
+
+1. Clone:
+   git clone https://github.com/dominic-fischer/Text-Tutor.git
+2. Install Dependencies + Run:
+   python main.py
+
+Optional:
+1. Install Ollama: 
+   https://ollama.com/download
+2. Pull a model:
+   ollama pull llama3
+
 
 ## Usage Instructions
 
