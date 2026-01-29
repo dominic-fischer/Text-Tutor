@@ -15,21 +15,29 @@ No cloud services required.
 ## Quick Start (Local)
 
 1. Clone:
+
    git clone https://github.com/dominic-fischer/Text-Tutor.git
 2. Install Dependencies + Run:
+
+   cd Text-Tutor
+
    python main.py
 
 Optional:
 1. Install Ollama: 
+
    https://ollama.com/download
 2. Pull a model:
+
    ollama pull llama3
 
 
 ## Demo
 
-![Login Demo](./screenshots/Login.gif)
-
+![Login](./screenshots/Login.gif)
+![Accessing Past Requests](./screenshots/Request.gif)
+![Word-Level Actions](./screenshots/Definitions.gif)
+![Sentence-Level Actions](./screenshots/Rephrase.gif)
 
 ## Usage Instructions
 
