@@ -1,6 +1,6 @@
 # Text Tutor: Getting Texts to Make Sense
 
-This application provides a simple and intuitive user interface that helps understand a text by providing additional cues. Word-level cues like Part-of-Speech (ADJ, NOUN, VERB, etc.) or grammatical function (subj, obj, indirect obj, etc.) are invoked by default, while additional functionalities like translation (using GoogleTranslate) and rephrasing (using OLLaMa's mistral model) can be leveraged on demand.
+This application provides a simple user interface that helps understand texts by providing additional cues. Word-level cues like Part-of-Speech (ADJ, NOUN, VERB, etc.) or grammatical function (subj, obj, indirect obj, etc.) are invoked by default, while additional functionalities like translation (using GoogleTranslate) and rephrasing (using OLLaMa models) can be leveraged on demand.
 
 ## Overview
 This is a **local-first application** designed to run on the user's machine.
@@ -48,7 +48,7 @@ In order to close the context menu, hover over "Hide". The results of context-me
 ![Word-Level Actions](./screenshots/Definitions.gif)
 
 ### Sentence-Level Actions
-Furthermore, **Rephrasing** (Ollama) and **Translation** (GoogleTranslate) can be performed on sentences or parts thereof. Just like word-level actions, this is done via the context menu.
+Furthermore, **Rephrasing** (OLLaMa) and **Translation** (GoogleTranslate) can be performed on sentences or parts thereof. Just like word-level actions, this is done via the context menu.
 
 ![Sentence-Level Actions](./screenshots/Rephrase.gif)
 
