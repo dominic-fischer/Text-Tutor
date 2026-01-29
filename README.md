@@ -14,21 +14,16 @@ No cloud services required.
 
 ## Quick Start (Local)
 
-1. **Clone:**
-
+1. **Clone:**  
    git clone https://github.com/dominic-fischer/Text-Tutor.git
-2. **Install Dependencies + Run:**
-
-   cd Text-Tutor
-
+2. **Install Dependencies + Run:**  
+   cd Text-Tutor  
    python main.py
 
 Optional:
-1. **Install Ollama:**
-
+1. **Install Ollama:**  
    https://ollama.com/download
-2. **Pull a model:**
-
+2. **Pull a model:**  
    ollama pull mistral
 
 
@@ -38,22 +33,22 @@ Once the application is open in your browser, you can log in on the "Sign In" pa
 
 ![Login](./screenshots/Login.gif)
 
-### Default Informations
-After copying or writing text into the input box, you can click the "Submit" button. This will process the text, which might take a few dozens of seconds. If you retrieved text from the database, processing will be skipped, as the information is saved.
+### Default Grammatical Information
+After copying or writing text into the input box, you can click the "Submit" button. This will process the text, which might take a few dozens of seconds. If you have retrieved text from the database, processing will be skipped, as the saved information is used.
 
-A new box will then appear with the processed text. Upon hovering over individual words, grammatical information such as Part-of-Speech tags and grammatical function will be displayed.
+A new box will then appear with the processed text. Upon hovering over individual words, grammatical information such as Part-of-Speech tags and grammatical function will be displayed. This information is based on [Stanza](https://stanfordnlp.github.io/stanza/index.html).
 
 ![Accessing Default Informations](./screenshots/Request.gif)
 
 ### Word-Level Actions
-Additional actions are performed via the context menu, which will appear upon selecting the desired text in the **input window** (in case it does not, it can be opened by right-clicking). For individual words, these actions include **Definitions** and **Synonyms**.
+Additional actions are performed via the context menu, which will appear upon selecting the desired text in the **input window** (in case it does not, it can be opened by right-clicking). For individual words, these actions include getting **Definitions** and **Synonyms** from [WordNet](https://wordnet.princeton.edu/).
 
 In order to close the context menu, hover over "Hide". The results of context-menu actions will appear in the corresponding boxes further below.
 
 ![Word-Level Actions](./screenshots/Definitions.gif)
 
 ### Sentence-Level Actions
-Furthermore, still with the context menu, **Rephrasing** and **Translation** can be performed on sentences or parts thereof.
+Furthermore, **Rephrasing** (Ollama) and **Translation** (GoogleTranslate) can be performed on sentences or parts thereof. Just like word-level actions, this is done via the context menu.
 
 ![Sentence-Level Actions](./screenshots/Rephrase.gif)
 
